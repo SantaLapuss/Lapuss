@@ -1049,7 +1049,7 @@ def title():
 ##############################################################################################
 def command():
     stdout.write(
-        Fore.RED + "╔═══" + Fore.RED + "[""Lapuss" + Fore.RED + "@" + Fore.RED + "NBP" + Fore.RED + "]" + Fore.RED + "\n╚══\x1b[38;2;255;0;0m> " + Fore.WHITE)
+        Fore.RED + "╔═══" + Fore.RED + "[""Lapuss" + Fore.RED + "@" + Fore.RED + "root" + Fore.RED + "]" + Fore.RED + "\n╚══\x1b[38;2;255;0;0m> " + Fore.WHITE)
     command = input()
     if command == "cls" or command == "clear":
         clear()
@@ -1060,7 +1060,7 @@ def command():
         credit()
     elif command == "layer7" or command == "LAYER7" or command == "l7" or command == "L7" or command == "Layer7" or command == "1":
         layer7()
-    elif command == "layer4" or command == "LAYER4" or command == "l4" or command == "L4" or command == "Layer4" or command == "22":
+    elif command == "layer4" or command == "LAYER4" or command == "l4" or command == "L4" or command == "Layer4" or command == "2":
         layer4()
     elif command == "tools" or command == "tool":
         tools()
@@ -1173,7 +1173,7 @@ def command():
             timer.join()
         else:
             stdout.write(Fore.RED + " [*] " + Fore.WHITE + "Failed to bypass cf\n")
-    elif command == "pxsky" or command == "PXSKY":
+    elif command == "pxsky" or command == "PXSKY" or command == "3":
         if get_proxies():
             target, thread, t = get_info_l7()
             threading.Thread(target=attackSKY, args=(target, t, thread)).start()
